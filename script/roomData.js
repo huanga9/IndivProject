@@ -1,4 +1,4 @@
-var userInformation = [
+var users = [
 {
     "name": "Angela Huang"
     "id": 81920,
@@ -40,3 +40,5 @@ var userInformation = [
     "password": "se2015"
 }
 ];
+
+
