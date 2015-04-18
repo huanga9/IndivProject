@@ -1,41 +1,4 @@
-<html>
-    
-    <head>
-        <title>Home Page</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-        <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-        <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"
-        rel="stylesheet" type="text/css">
-        <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css"
-        rel="stylesheet" type="text/css">
-    </head>
-    
-    <body>
-        <div class="section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <ul class="nav nav-pills">
-                            <li class="active">
-                                <a href="#">Home</a>
-                            </li>
-                            <li class="">
-                                <a href="#">Chores</a>
-                            </li>
-                            <li class="">
-                                <a href="#">Notifications</a>
-                            </li>
-                            <li class="">
-                                <a href="#">Feedback</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="cover">
+<div class="cover">
             <div class="cover-image" style="background-image: url(https://unsplash.imgix.net/photo-1418065460487-3e41a6c84dc5?q=75&amp;fm=jpg&amp;s=127f3a3ccf4356b7f79594e05f6c840e);"></div>
             <div class="container">
                 <div class="row">
@@ -53,36 +16,16 @@
                                 <input type="password" name="password" placeholder="Password">
                             </p>
                             <p class="submit">
-                                <input type="submit" name="commit" value="Login">
+                                <input type="submit" value="Login" onclick="location.href='rankChores.html'">
                             </p>
                         </center>
                     </form>
                 </div>
                 <div class="login-help">
                     <center>
-                        <p class="text-inverse">Don't have an account? Create one
-                            <a href="index.html">here</a>.</p>
+                        <p class="text-inverse">Don't have an account? &nbsp;Create one
+                            <a href="createAccount.html">here</a>.</p>
                     </center>
                 </div>
             </div>
         </div>
-        <div class="section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="section">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-12"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </body>
-    
-    <script src="https://login.persona.org/include.js"></script>
-
-</html>
