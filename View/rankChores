@@ -1,0 +1,210 @@
+<html>
+    
+    <head>
+        <title>rankChores</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"
+        rel="stylesheet" type="text/css">
+        <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css"
+        rel="stylesheet" type="text/css">
+    </head>
+    
+    <body>
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="nav nav-pills">
+                            <li class="active">
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="">
+                                <a href="#">Chores</a>
+                            </li>
+                            <li class="">
+                                <a href="#">Notifications</a>
+                            </li>
+                            <li class="">
+                                <a href="#">Feedback</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="text-primary">Rank Your Chores
+                            <br>
+                            <br>
+                            <small>Rank the difficulty of each chore from 1 to 5. If a chore is not necessary
+                                for your living situation, please leave the check boxes for that chore
+                                blank.</small>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form>
+            <div class="section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <legend>Take out Garbage and Recycling Bins:</legend>
+                            <div id="difficultyLevels">
+                                <input type="checkbox" class="difficulty" name="level1">1
+                                <input type="checkbox" class="difficulty" name="level2">2
+                                <input type="checkbox" class="difficulty" name="level3">3
+                                <input type="checkbox" class="difficulty" name="level4">4
+                                <input type="checkbox" class="difficulty" name="level5">5</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <legend>Vacuum Common Areas:</legend>
+                        <div id="difficultyLevels">
+                            <input type="checkbox" class="difficulty" name="level1">1
+                            <input type="checkbox" class="difficulty" name="level2">2
+                            <input type="checkbox" class="difficulty" name="level3">3
+                            <input type="checkbox" class="difficulty" name="level4">4
+                            <input type="checkbox" class="difficulty" name="level5">5</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <legend>Clean Bathroom (Scrub Toilet and Shower):</legend>
+                        <div id="difficultyLevels">
+                            <input type="checkbox" class="difficulty" name="level1">1
+                            <input type="checkbox" class="difficulty" name="level2">2
+                            <input type="checkbox" class="difficulty" name="level3">3
+                            <input type="checkbox" class="difficulty" name="level4">4
+                            <input type="checkbox" class="difficulty" name="level5">5</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <legend>Clean Bathroom (Clean Sink, Countertop, and Mirror):</legend>
+                        <div id="difficultyLevels">
+                            <input type="checkbox" class="difficulty" name="level1">1
+                            <input type="checkbox" class="difficulty" name="level2">2
+                            <input type="checkbox" class="difficulty" name="level3">3
+                            <input type="checkbox" class="difficulty" name="level4">4
+                            <input type="checkbox" class="difficulty" name="level5">5</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <legend>Clean Kitchen (Clean countertop and stove):</legend>
+                        <div id="difficultyLevels">
+                            <input type="checkbox" class="difficulty" name="level1">1
+                            <input type="checkbox" class="difficulty" name="level2">2
+                            <input type="checkbox" class="difficulty" name="level3">3
+                            <input type="checkbox" class="difficulty" name="level4">4
+                            <input type="checkbox" class="difficulty" name="level5">5</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <legend>Clean Kitchen (Clear dining table and Wash Dishes):</legend>
+                        <div id="difficultyLevels">
+                            <input type="checkbox" class="difficulty" name="level1">1
+                            <input type="checkbox" class="difficulty" name="level2">2
+                            <input type="checkbox" class="difficulty" name="level3">3
+                            <input type="checkbox" class="difficulty" name="level4">4
+                            <input type="checkbox" class="difficulty" name="level5">5</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <legend>Clean Refrigerator of Spoiled Food:</legend>
+                        <div id="difficultyLevels">
+                            <input type="checkbox" class="difficulty" name="level1">1
+                            <input type="checkbox" class="difficulty" name="level2">2
+                            <input type="checkbox" class="difficulty" name="level3">3
+                            <input type="checkbox" class="difficulty" name="level4">4
+                            <input type="checkbox" class="difficulty" name="level5">5</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <legend>Tidy up Common Area:</legend>
+                        <div id="difficultyLevels">
+                            <input type="checkbox" class="difficulty" name="level1">1
+                            <input type="checkbox" class="difficulty" name="level2">2
+                            <input type="checkbox" class="difficulty" name="level3">3
+                            <input type="checkbox" class="difficulty" name="level4">4
+                            <input type="checkbox" class="difficulty" name="level5">5</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <legend>Mop Floors (Bathroom and Kitchen):</legend>
+                        <div id="difficultyLevels">
+                            <input type="checkbox" class="difficulty" name="level1">1
+                            <input type="checkbox" class="difficulty" name="level2">2
+                            <input type="checkbox" class="difficulty" name="level3">3
+                            <input type="checkbox" class="difficulty" name="level4">4
+                            <input type="checkbox" class="difficulty" name="level5">5</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <legend>Mop Floors (Bathroom and Kitchen):</legend>
+                        <div id="difficultyLevels">
+                            <input type="checkbox" class="difficulty" name="level1">1
+                            <input type="checkbox" class="difficulty" name="level2">2
+                            <input type="checkbox" class="difficulty" name="level3">3
+                            <input type="checkbox" class="difficulty" name="level4">4
+                            <input type="checkbox" class="difficulty" name="level5">5</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="submit" align="center">
+            <input type="submit" value="Submit rankings" onclick="location.href='rankChores.html'">
+        </p>
+    </body>
+
+</html>
