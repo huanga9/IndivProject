@@ -21,13 +21,13 @@
                             <li class="active">
                                 <a href="#">Home</a>
                             </li>
-                            <li>
+                            <li class="">
                                 <a href="#">Chores</a>
                             </li>
-                            <li>
+                            <li class="">
                                 <a href="#">Notifications</a>
                             </li>
-                            <li>
+                            <li class="">
                                 <a href="#">Feedback</a>
                             </li>
                         </ul>
@@ -40,11 +40,29 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <h1 class="text-inverse">Welcome to the Roomate Appication!&nbsp;</h1>
+                        <h1 class="text-primary">Welcome to the Roommate Application!&nbsp;</h1>
                         <br>
                         <br>
-                        <a class="btn btn-lg btn-primary">Log In Here</a>
                     </div>
+                    <form method="post" action="index.html">
+                        <center>
+                            <p>
+                                <input type="text" name="login" placeholder="Username or Email">
+                            </p>
+                            <p>
+                                <input type="password" name="password" placeholder="Password">
+                            </p>
+                            <p class="submit">
+                                <input type="submit" name="commit" value="Login">
+                            </p>
+                        </center>
+                    </form>
+                </div>
+                <div class="login-help">
+                    <center>
+                        <p class="text-inverse">Don't have an account? Create one
+                            <a href="index.html">here</a>.</p>
+                    </center>
                 </div>
             </div>
         </div>
@@ -64,5 +82,7 @@
             </div>
         </div>
     </body>
+    
+    <script src="https://login.persona.org/include.js"></script>
 
 </html>
