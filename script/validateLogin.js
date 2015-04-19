@@ -13,9 +13,8 @@ function login() {
 		}
 	}
 	
-	//Note: Change URL after Demo
 	if (valid) {
-		window.location.replace("http://127.0.0.1/IndivProject/View/rankChores.html");
+		document.location.href = '../View/rankChores.html'
 		alert ("Login was successful");
 	}
 	
