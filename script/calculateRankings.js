@@ -44,5 +44,36 @@ function averageRankings() {
         alert ("Thank you for submitting your Rankings.");
 	document.location.href = '../View/viewChores.html'
 	
-	return temp;
+	quickSort(temp, 0, temp.length);
 }
+
+function quickSort(array, low, high){
+	
+     if (high>low ){
+		var pivot = array[high];
+		array = qpartition(array, pivot);
+		quickSort(array, low, high-1);
+		quickSort(array, low+1, high);
+	}
+	return array;
+}
+ 
+function qpartition (array, pivot) {
+	
+	var i=0;
+	for(var j=0; j<array.length; j++){
+		if( array[j]!= pivot && array[j] < pivot ){
+			var temp = array[i];
+			array[i] = array[j];
+			array[j] = temp;
+			i++;
+		}
+	}
+	return array;
+}
+
+function greedyPartition(){
+	
+}
+
+
