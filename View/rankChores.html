@@ -24,7 +24,7 @@
                               <a href="../View/index.html">Home</a>
                             </li>
                             <li class="">
-                              <a href="../View/viewChores.html">Chores</a>
+                              <a href="../View/rankChores.html">Chores</a>
                             </li>
                             <li class="">
                                 <a href="#">Notifications</a>
@@ -70,6 +70,9 @@
                 </div>
             </div>
         </form>
+        <script>$('input[type="checkbox"]').on('change', function() {
+                    $('input[name="' + this.name + '"]').not(this).prop('checked', false);
+                 });</script>
         <div class="section">
             <div class="container">
                 <div class="row">
