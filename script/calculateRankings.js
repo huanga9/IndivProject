@@ -8,7 +8,7 @@ function averageRankings() {
     var chore1 = document.getElementsByClassName('garbage');
     	
     // average values 
-    for (var i=1; i<=chore1.length; i++) {
+    for (var i=0; i<chore1.length; i++) {
         if ((chore1[i].value).checked){
         	temp[0]=(points[0]+(chore1[i].value))/2;
     	}
