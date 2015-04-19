@@ -13,7 +13,7 @@ function login() {
 		}
 	}
 	
-	if (valid) {
+	if (valid==true) {
 		alert ("Login was successful");
 		window.location = "rankChores.html";
 		return false;
