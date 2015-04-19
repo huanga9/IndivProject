@@ -9,9 +9,8 @@ function averageRankings() {
     	
     // average values 
     for (var i=1; i<=chore1.length; i++) {
-    	chore1[i].checked = true;
-        if (chore1[i].checked == true){
-        	temp[0]=(points[0]+i)/2;
+        if ((chore1[i].value).checked){
+        	temp[0]=(points[0]+(chore1[i].value))/2;
     	}
     }
     
