@@ -14,8 +14,9 @@ function login() {
 	}
 	
 	if (valid) {
-		document.location.href = '../View/rankChores.html'
 		alert ("Login was successful");
+		document.location.href = '../View/rankChores.html'
+		return false;
 	}
 	
 	else {
