@@ -14,9 +14,10 @@ function login() {
 	}
 	
 	if (valid) {
+		var url = "http://127.0.0.1/IndivProject/View/rankChores.html";    
+		$(location).attr('href',url);
 		alert ("Login was successful");
-		document.location.href = '../View/rankChores.html'
-		return false;
+		
 	}
 	
 	else {
