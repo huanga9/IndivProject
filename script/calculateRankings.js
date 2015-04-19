@@ -103,7 +103,7 @@ function averageRankings() {
     }
     
     alert ("Thank you for submitting your Rankings.");
-		window.location = "viewChores.html";
+	document.location.href = '../View/viewChores.html'
 	
 	return temp;
 }
