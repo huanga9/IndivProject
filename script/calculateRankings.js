@@ -1,18 +1,14 @@
 function averageRankings() {
 	
-	var points = [2, 3, 5, 3, 5, 4, 2, 1, 4];
+	var initialRankings = [2, 3, 5, 3, 5, 4, 2, 1, 4];
 	var temp=new Array(9);
 	
 	//Chore 1:
 	// get reference to checkboxes 
-    var chore1 = document.getElementsByClassName('garbage');
-    	
-    // average values 
-    for (var i=0; i<chore1.length; i++) {
-        if ((chore1[i].value).checked){
-        	temp[0]=(points[0]+(chore1[i].value))/2;
-    	}
-    }
+	
+	var chore1 = $('input[name=rank1]');
+	var value1 = myRadio1.filter(':checked').val();
+        temp[0]=(initialRankings[0]+value1)/2;
     
 	//Chore 2:
 	// get reference to checkboxes
@@ -21,7 +17,7 @@ function averageRankings() {
     // average values
     for (var i=1; i<=chore2.length; i++) {
         if (chore2[i].checked == true){
-        	temp[1]=(points[1]+i)/2;
+        	temp[1]=(initialRankings[1]+i)/2;
     	}
     }
     	
@@ -32,7 +28,7 @@ function averageRankings() {
     // average values
     for (var i=1; i<=chore3.length; i++) {
         if (chore3[i].checked == true){
-        	temp[2]=(points[2]+i)/2;
+        	temp[2]=(initialRankings[2]+i)/2;
     	}
     }
     
@@ -43,7 +39,7 @@ function averageRankings() {
     // average values
     for (var i=1; i<=chore4.length; i++) {
         if (chore4[i].checked == true){
-        	temp[3]=(points[3]+i)/2;
+        	temp[3]=(initialRankings[3]+i)/2;
     	}
 	}
 	
@@ -54,7 +50,7 @@ function averageRankings() {
     // average values
     for (var i=1; i<=chore5.length; i++) {
         if (chore5[i].checked == true){
-        	temp[4]=(points[4]+i)/2;
+        	temp[4]=(initialRankings[4]+i)/2;
     	}
     }
     	
@@ -65,7 +61,7 @@ function averageRankings() {
     // average values
     for (var i=1; i<=chore6.length; i++) {
         if (chore6[i].checked == true){
-        	temp[5]=(points[5]+i)/2;
+        	temp[5]=(initialRankings[5]+i)/2;
     	}
 	}
 	
@@ -76,7 +72,7 @@ function averageRankings() {
     // average values
     for (var i=1; i<=chore7.length; i++) {
         if (chore7[i].checked == true){
-        	temp[6]=(points[6]+i)/2;
+        	temp[6]=(initialRankings[6]+i)/2;
     	}
 	}
 	
@@ -87,7 +83,7 @@ function averageRankings() {
     // average values
     for (var i=1; i<=chore8.length; i++) {
         if (chore8[i].checked == true){
-        	temp[7]=(points[7]+i)/2;
+        	temp[7]=(initialRankings[7]+i)/2;
     	}
     }
     
@@ -98,7 +94,7 @@ function averageRankings() {
     // average values
     for (var i=1; i<=chore9.length; i++) {
         if (chore9[i].checked == true){
-        	temp[8]=(points[8]+i)/2;
+        	temp[8]=(initialRankings[8]+i)/2;
     	}
     }
     
