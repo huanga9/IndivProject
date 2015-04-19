@@ -1,8 +1,8 @@
 function login() {
 
-    // get reference to user input
-    var inputUsername = document.getElementById('username');
-	var inputPassword = document.getElementByID('password');
+    	// get reference to user input
+	var inputUsername = document.getElementById('username');
+ 	var inputPassword = document.getElementById('password');
 	
 	var valid = false;
 	
