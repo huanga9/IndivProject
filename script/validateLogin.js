@@ -7,13 +7,13 @@ function login() {
 	var valid = false;
 	
 	for (var i=0; i <users.length; i++) {
-		if ((inputUsername == users[i].userName) && (inputPassword == users[i].password)) {
+		if ((inputUsername == users[i].userName) || (inputPassword == users[i].password)) {
 			valid = true;
 			break;
 		}
 	}
 	
-	if (valid==true) {
+	if (valid) {
 		alert ("Login was successful");
 		window.location = "rankChores.html";
 		return false;
