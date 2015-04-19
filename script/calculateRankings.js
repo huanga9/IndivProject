@@ -5,21 +5,10 @@ function averageRankings() {
 	
 	//Chore 1:
 	// get reference to radio button value
-	var radios = document.getElementsByName('garbage');
-
-	for (var i = 0, length = radios.length; i < length; i++) {
-	 if (radios[i].checked) {
-        // do whatever you want with the checked radio
-        alert(radios[i].value);
-
-        // only one radio can be logically checked, don't check the rest
-        break;
-    }
-}
-	var chore1 = $('input[name=rank1]');
-	var checkedValue1 = rank1.filter(':checked').val();
+	var chore1 = $('input[name=rank1]', '#difficultyLevels1');
+	var checkedValue1 = chore1.filter(':checked').val();
 	//average values
-        temp[0]=(initialRankings[0]+value1)/2;
+        temp[0]=(initialRankings[0]+checkedValue1)/2;
     
 	//Chore 2:
 	// get reference to radio button value
