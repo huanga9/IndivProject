@@ -1,6 +1,6 @@
 var users = [
 {
-    "name": "Angela Huang"
+    "name": "Angela Huang",
     "id": 81920,
     "lastName": "Huang",
     "firstName": "Angela",
