@@ -15,9 +15,8 @@ function login() {
 	
 	//Note: Change URL after Demo
 	if (valid) {
-		alert ("Login was successful");
 		window.location.replace("http://127.0.0.1/IndivProject/View/rankChores.html");
-		return false;
+		alert ("Login was successful");
 	}
 	
 	else {
