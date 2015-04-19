@@ -5,8 +5,8 @@ var users = [
     "lastName": "Huang",
     "firstName": "Angela",
     "building": "Eickhoff Hall",
-    "roomNumber": "231"
-    "userName": "huanga"
+    "roomNumber": "231",
+    "userName": "huanga",
     "password": "se2015"
 },
 {
@@ -15,8 +15,8 @@ var users = [
     "lastName": "Wulf",
     "firstName": "Dylan",
     "building": "Cromwell",
-    "roomNumber": "311"
-    "userName": "wulfd"
+    "roomNumber": "311",
+    "userName": "wulfd",
     "password": "se2015"
 },
 {
@@ -25,8 +25,8 @@ var users = [
     "lastName": "Roberts",
     "firstName": "Graham",
     "building": "Townhouse East",
-    "roomNumber": "19"
-    "userName": "robertsg"
+    "roomNumber": "19",
+    "userName": "robertsg",
     "password": "se2015"
 },
 {
@@ -35,8 +35,8 @@ var users = [
     "lastName": "Fullman",
     "firstName": "Trevor",
     "building": "Townhouse East",
-    "roomNumber": "23"
-    "userName": "fullmant"
+    "roomNumber": "23",
+    "userName": "fullmant",
     "password": "se2015"
 }
 ];
