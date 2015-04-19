@@ -1,13 +1,13 @@
 function login() {
 
     	// get reference to user input
-	var inputUsername = document.getElementById('username');
- 	var inputPassword = document.getElementById('password');
+	var inputUsername = document.getElementById('username').value;
+ 	var inputPassword = document.getElementById('password').value;
 	
 	var valid = false;
 	
 	for (var i=0; i <users.length; i++) {
-		if ((inputUsername == users[i].userName) || (inputPassword == users[i].password)) {
+		if ((inputUsername == users[i].userName) && (inputPassword == users[i].password)) {
 			valid = true;
 			break;
 		}
