@@ -1,8 +1,6 @@
 function averageRankings() {
 	
-	var values = new Array();
-
-quickSort (values, 0, values.length-1 );
+	var values = [9];
 	
 	//Gets reference to radio button values, converts the strings to integer values, and averages the values with 
 	//pre-computed values
@@ -47,8 +45,7 @@ quickSort (values, 0, values.length-1 );
 	
 	var temp = quickSort(values, 0, values.length-1);
 	
-	
-	
+	alert ("'Roommate1:' + greedyPartition(chores1) +  'Roommate 2:' + greedyPartition(chores2)");
 }
 
 //Sorts array based on numeric values
@@ -106,7 +103,7 @@ function swap (a, i, j) {
 
 }
 
-function greedyPartition(sortedArray, left, right){
+function greedyPartition(sortedArray){
 
 	var chores1 = [];
 	var chores2 = [];
