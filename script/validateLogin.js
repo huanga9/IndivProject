@@ -27,14 +27,16 @@ function login() {
 function validateAccount () {
 	
 	// gets references to user input
-	var inputFullName = document.getElementById('name').value;
+	var inputFirstName = document.getElementById('firstName').value;
+	var inputLastName = document.getElementById('lastName').value;
 	var inputBuilding= document.getElementById('building').value;
 	var inputUsername = document.getElementById('username').value;
 	var inputPassword = document.getElementById('password').value;
 
         var letters = /^[A-Za-z]+$/;  
         var lettersNumbersUnderscore = /^[a-zA-Z0-9_]+$/;
-        if (!(inputFullName.match(letters)) || !(inputBuilding.match(letters)) || !(inputUsername.match(lettersNumbersUnderscore)) || !(inputPassword.match(lettersNumbersUnderscore))) {
+        
+        if (!(inputFullName.match(letters)) || !(inputLastName.match(letters)) || !(inputBuilding.match(letters)) || !(inputUsername.match(lettersNumbersUnderscore)) || !(inputPassword.match(lettersNumbersUnderscore))) {
       		alert ("Invalid input!  Note: Name and Building should only contain letters. Username and Password should only contain letters, numbers, and underscores.");
 	}
 	
