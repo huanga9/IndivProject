@@ -45,7 +45,7 @@ function averageRankings() {
 	
 	var temp = quickSort(values, 0, values.length-1);
 	
-	alert ("'Roommate1:' + greedyPartition(chores1) +  'Roommate 2:' + greedyPartition(chores2)");
+	document.write("'Roommate1:' + greedyPartition(chores1) +  'Roommate 2:' + greedyPartition(chores2)");
 }
 
 //Sorts array based on numeric values
