@@ -6,6 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
         <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <script src="../script/validateLogin.js"></script>
+        <script src="../script/roomData.js"></script>
+        <script src="../script/calculateRankings.js"></script>
         <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"
         rel="stylesheet" type="text/css">
         <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css"
@@ -21,7 +24,7 @@
                             <li class="active">
                                 <a href="../View/index.html"">Home</a>
                             </li>
-                            <li class="">
+                            <!--<li class="">
                                 <a href="../View/rankChores.html"">Chores</a>
                             </li>
                             <li class="">
@@ -29,7 +32,7 @@
                             </li>
                             <li class="">
                                 <a href="#">Feedback</a>
-                            </li>
+                            </li>-->
                         </ul>
                     </div>
                 </div>
@@ -55,25 +58,26 @@
                                 <input type="hidden" name="submitted" id="submitted" value="1">
                                 <label for="name">Your Full Name*:</label>
                                 <br>
-                                <input type="text" name="name" id="name" maxlength="50">
+                                <input type="text" name="name" id="name" maxlength="20">
                                 <br>
                                 <br>
-                                <label for="email">Email Address*:</label>
+                                <label for="building">Building*:</label>
                                 <br>
-                                <input type="text" name="email" id="email" maxlength="50">
+                                <input type="text" name="building" id="building" maxlength="20" >
                                 <br>
                                 <br>
                                 <label for="username">UserName*:</label>
                                 <br>
-                                <input type="text" name="username" id="username" maxlength="50">
+                                <input type="text" name="username" id="username" maxlength="20">
                                 <br>
                                 <br>
                                 <label for="password">Password*:</label>
                                 <br>
-                                <input type="password" name="password" id="password" maxlength="50">
+                                <input type="password" name="password" id="password" maxlength="20">
                                 <br>
                                 <br>
-                                <input type="submit" name="Submit" value="Submit">
+                                <input type="submit" name="Submit" value="Create" onclick="validateAccount()">
+    
                             </fieldset>
                         </form>
                     </div>
