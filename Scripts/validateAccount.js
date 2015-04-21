@@ -36,7 +36,7 @@ function createAccount () {
         var letters = /^[A-Za-z]+$/;  
         var lettersNumbersUnderscore = /^[a-zA-Z0-9_]+$/;
         
-        if (!(inputFullName.match(letters)) || !(inputLastName.match(letters)) || !(inputBuilding.match(letters)) || !(inputUsername.match(lettersNumbersUnderscore)) || !(inputPassword.match(lettersNumbersUnderscore))) {
+        if (!(inputFirstName.match(letters)) || !(inputLastName.match(letters)) || !(inputBuilding.match(letters)) || !(inputUsername.match(lettersNumbersUnderscore)) || !(inputPassword.match(lettersNumbersUnderscore))) {
       		alert ("Invalid input!  Note: Name and Building should only contain letters. Username and Password should only contain letters, numbers, and underscores.");
 	}
 	
