@@ -1,4 +1,4 @@
-function averageRankings() {
+function assignChores() {
 	
 	var values = [9];
 	
