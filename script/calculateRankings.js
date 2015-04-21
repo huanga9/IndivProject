@@ -49,7 +49,7 @@ function averageRankings() {
 }
 
 //Sorts array based on numeric values
-
+/*
 function quickSort (array, lo, hi) {
 
   var low  = lo;
@@ -141,3 +141,4 @@ function greedyPartition(sortedArray){
 	
 	return chores2;
 }
+*/
