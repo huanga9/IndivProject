@@ -34,13 +34,12 @@ function validateAccount () {
 
         var letters = /^[A-Za-z]+$/;  
         var lettersNumbersUnderscore = /^[a-zA-Z0-9_]+$/;
-        if ( !(inputFullName.value.match(letters)) || !(inputBuilding.value.match(letters)) || !(inputUsername.match(lettersNumbersUnderscore)) || !(ivar inputPassword.match(lettersNumbersUnderscore))) {
+        if (!(inputFullName.match(letters)) || !(inputBuilding.match(letters)) || !(inputUsername.match(lettersNumbersUnderscore)) || !(inputPassword.match(lettersNumbersUnderscore))) {
       		alert ("Invalid input!  Note: Name and Building should only contain letters. Username and Password should only contain letters, numbers, and underscores.");
 	}
 	
 	else {
-	
-      		alert('Account successfully created.');  
+      		alert ("Account successfully created.");  
      		document.location.href = '../View/rankChores.html'
       }  
 }
