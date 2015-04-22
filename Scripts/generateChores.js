@@ -32,49 +32,52 @@ function assignChores(){
 		chore4Val = parseInt(chore4.val(), 10);
     		values.push(chore4Val);
    		maptoName.push(chore4.name)
-    }
+	 }
     
     var chore5=$("input:radio[name='rank5']:checked")
 	if (chore5.length > 0) {
 		chore5Val = parseInt(chore5.val(), 10);
     		values.push(chore5Val);
    	  	maptoName.push(chore5.name)
-    }
+	 }
     
     var chore6=$("input:radio[name='rank6']:checked")
 	if (chore6.length > 0) {
 	chore6Val = parseInt(chore6.val(), 10);
     	values.push(chore6Val);
    	maptoName.push(chore6.name)
-    }
+	  }
         
     var chore7=$("input:radio[name='rank7']:checked")
 	if (chore7.length > 0) {
 		chore7Val = parseInt(chore7.val(), 10);
     		values.push(chore7Val);
    	    maptoName.push(chore7.name)
-    }
+	    }
         
     var chore8=$("input:radio[name='rank8']:checked")
 	if (chore8.length > 0) {
 		chore8Val = parseInt(chore8.val(), 10);
     		values.push(chore8Val);
    		maptoName.push(chore8.name)
-    }
+	  }
         
     var chore9=$("input:radio[name='rank9']:checked")
 	if (chore9.length > 0) {
 		chore9Val = parseInt(chore9.val(), 10);
     		values.push(chore9Val);
    		maptoName.push(chore9.name)
-    }
+	   }
 
 	 alert ("Thank you for submitting your Rankings.");
 	 document.location.href = '../View/viewChores.html'
 	 quickSort(values, maptoName, 0, values.length);
-	 console.log(values);
-	 console.log(maptoName);
+	  var elem = document.getElementById('Roommate1');
+	  elem.innerHTML = temp;
+	  var elem2 = document.getElementById('Roommate2');
+	  elem2.innerHTML = maptoName;
 }
+
 
 
 function quickSort(array, array2, low, high)
