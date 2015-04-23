@@ -1,5 +1,18 @@
-/* This function assigns chores by reading in user input from the Chores Ranking page, sorting the input by its value
-by calling the quickSort() function, and calling the greedyPartition() function to evenly distribute the chores. */
+/*
+ * Name: Angela Huang
+ * Course: CSC 415 (Software Engineering)
+ * Semester: Spring 2015
+ * Instructor: Dr. Pulimood
+ *
+ * Project Name: The Roommate Application 
+ * Description: a website that allows roommates to track living obligations via chore assignements and communicate through a notfications and feedback page
+ *
+ * Filename: generateChores.js
+ * Description: This file assigns chores by reading in user input from the Chores Ranking page, sorting the input by its value
+ * by calling the quickSort() function, and calling the greedyPartition() function to evenly distribute the chores.
+ * Last Modified: April 22, 2015
+ *
+ */
 
 function assignChores(){
 	
