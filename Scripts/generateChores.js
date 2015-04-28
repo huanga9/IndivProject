@@ -86,10 +86,6 @@ function assignChores(){
 //	 document.location.href = '../View/viewChores.html'
 	 
 	 quickSort(values, maptoName, 0, values.length);
-	 var elem = document.getElementById('Roommate1');
-	 elem.innerHTML = values;
-	 var elem2 = document.getElementById('Roommate2');
-	 elem2.innerHTML = maptoName;
 	 
 	 var split=greedyPartition(temp, names);
 	 window.alert(split);
