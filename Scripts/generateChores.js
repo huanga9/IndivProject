@@ -17,7 +17,7 @@
 function assignChores(){
 	
 	var values = [];
-	maptoName = [];
+	var maptoName = [];
 
 	var chore1=$("input:radio[name='rank1']:checked")
 	if (chore1.length > 0) {
@@ -40,61 +40,63 @@ function assignChores(){
    		maptoName.push(chore3.name)
 	 }
         
-    var chore4=$("input:radio[name='rank4']:checked")
+    	var chore4=$("input:radio[name='rank4']:checked")
 	if (chore4.length > 0) {
 		chore4Val = parseInt(chore4.val(), 10);
     		values.push(chore4Val);
    		maptoName.push(chore4.name)
 	 }
     
-    var chore5=$("input:radio[name='rank5']:checked")
+    	var chore5=$("input:radio[name='rank5']:checked")
 	if (chore5.length > 0) {
 		chore5Val = parseInt(chore5.val(), 10);
     		values.push(chore5Val);
    	  	maptoName.push(chore5.name)
 	 }
     
-    var chore6=$("input:radio[name='rank6']:checked")
-	if (chore6.length > 0) {
-	chore6Val = parseInt(chore6.val(), 10);
-    	values.push(chore6Val);
-   	maptoName.push(chore6.name)
-	  }
+	var chore6=$("input:radio[name='rank6']:checked")
+ 	if (chore6.length > 0) {
+		chore6Val = parseInt(chore6.val(), 10);
+    		values.push(chore6Val);
+   		maptoName.push(chore6.name)
+	}
         
-    var chore7=$("input:radio[name='rank7']:checked")
+	var chore7=$("input:radio[name='rank7']:checked")
 	if (chore7.length > 0) {
 		chore7Val = parseInt(chore7.val(), 10);
     		values.push(chore7Val);
-   	    maptoName.push(chore7.name)
-	    }
+   		maptoName.push(chore7.name)
+	}
         
-    var chore8=$("input:radio[name='rank8']:checked")
+    	var chore8=$("input:radio[name='rank8']:checked")
 	if (chore8.length > 0) {
 		chore8Val = parseInt(chore8.val(), 10);
     		values.push(chore8Val);
    		maptoName.push(chore8.name)
-	  }
+	 }
         
-    var chore9=$("input:radio[name='rank9']:checked")
+    	var chore9=$("input:radio[name='rank9']:checked")
 	if (chore9.length > 0) {
 		chore9Val = parseInt(chore9.val(), 10);
     		values.push(chore9Val);
    		maptoName.push(chore9.name)
-	   }
+	  }
 
 	 alert ("Thank you for submitting your Rankings.");
 	 document.location.href = '../View/viewChores.html'
+	 
 	 quickSort(values, maptoName, 0, values.length);
-	  var elem = document.getElementById('Roommate1');
-	  elem.innerHTML = values;
-	  var elem2 = document.getElementById('Roommate2');
-	  elem2.innerHTML = maptoName;
+	 var elem = document.getElementById('Roommate1');
+	 elem.innerHTML = values;
+	 var elem2 = document.getElementById('Roommate2');
+	 elem2.innerHTML = maptoName;
+	 
+	 var split=greedyPartition(temp, names);
+	 window.alert(split);
 }
 
 
-
-function quickSort(array, array2, low, high)
-{
+function quickSort(array, array2, low, high) {
     if(high-1>low) {
         var pivot=low+Math.floor(Math.random()*(high-low));;
 
@@ -105,8 +107,7 @@ function quickSort(array, array2, low, high)
     }
 }
 
-function qPartition (array, array2, low, high, pivot)
-{
+function qPartition (array, array2, low, high, pivot) {
     var piv=array[pivot];
     array.swap(pivot, high-1);
     array2.swap(pivot, high-1);
@@ -126,9 +127,57 @@ function qPartition (array, array2, low, high, pivot)
 }
 
 
-Array.prototype.swap=function(a, b)
-{
+Array.prototype.swap=function(a, b) {
     var tmp=this[a];
     this[a]=this[b];
     this[b]=tmp;
+}
+
+function greedyPartition(sortedArray, sortedArray2) {
+
+	var chores1 = [];
+	var chores2 = [];
+	var names1=[];
+	var names2=[];
+	
+	chores1.push(sortedArray[0]);
+	chores2.push(sortedArray[1]);
+	
+	names1.push(sortedArray2[0]);
+	names2.push(sortedArray2[1]);
+
+	//Add an if statement to check if sortedArray.length>2
+	if (chores1[0]>chores2[0]){
+		chores2.push(sortedArray[2]) 
+		names2.push(sortedArray2[2])
+	}
+	else {
+		chores1.push(sortedArray[2]) 
+		names1.push(sortedArray2[2])
+	}
+	
+	for (var i = 2; i<sortedArray.length; i++) {
+		
+		var sum1 = 0; 
+		for(var j = 0; j < chores1.length; j++) {
+    			sum1 = sum1 + chores1[j];
+		}
+	
+		var sum2 = 0; 
+		for(var k = 0; k < chores2.length; k++) {
+    			sum2 = sum2 + chores2[k];
+		}
+	
+		if (sum1 > sum2) {
+			chores2.push(sortedArray[i]) 
+			names2.push(sortedArray2[i])
+		}
+			
+		else {
+			chores1.push(sortedArray[i]);
+			names1.push(sortedArray2[i])
+		}
+	}
+	
+	return [chores1, names1, chores2, names2];
 }
