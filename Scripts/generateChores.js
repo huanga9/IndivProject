@@ -23,21 +23,21 @@ function assignChores(){
 	if (chore1.length > 0) {
 		chore1Val = parseInt(chore1.val(), 10);
     		values.push(chore1Val);
-    		maptoName.push(chore1.name)
+    		maptoName.push($(this).attr('name'))
 	 }
     
 	var chore2=$("input:radio[name='rank2']:checked")
 	if (chore2.length > 0) {
 		chore2Val = parseInt(chore2.val(), 10);
     		values.push(chore2Val);
-   	    	maptoName.push(chore2.name)
+   	    	maptoName.push($(this).attr('name'));
 	 }
     
 	var chore3=$("input:radio[name='rank3']:checked")
 	if (chore3.length > 0) {
 		chore3Val = parseInt(chore3.val(), 10);
     		values.push(chore3Val);
-   		maptoName.push(chore3.name)
+   		maptoName.push($(this).attr('name');)
 	 }
         
     	var chore4=$("input:radio[name='rank4']:checked")
