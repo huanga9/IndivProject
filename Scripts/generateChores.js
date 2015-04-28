@@ -87,7 +87,7 @@ function assignChores(){
 	 
 	 quickSort(values, maptoName, 0, values.length);
 	 
-	 var split=greedyPartition(temp, names);
+	 var split=greedyPartition(values, maptoName);
 	 window.alert(split);
 }
 
