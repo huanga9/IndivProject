@@ -82,8 +82,8 @@ function assignChores(){
    		maptoName.push(chore9.name)
 	  }
 
-	 alert ("Thank you for submitting your Rankings.");
-	 document.location.href = '../View/viewChores.html'
+//	 alert ("Thank you for submitting your Rankings.");
+//	 document.location.href = '../View/viewChores.html'
 	 
 	 quickSort(values, maptoName, 0, values.length);
 	 var elem = document.getElementById('Roommate1');
