@@ -16,6 +16,9 @@
 
 function assignChores(){
 	
+	alert ("Thank you for submitting your Rankings.");
+	document.location.href = '../View/viewChores.html'
+	
 	var values = [];
 	var maptoName = [];
 
@@ -81,9 +84,6 @@ function assignChores(){
     		values.push(chore9Val);
    		maptoName.push(chore9.attr('class'));
 	 }
-
-//	 alert ("Thank you for submitting your Rankings.");
-//	 document.location.href = '../View/viewChores.html'
 	 
 	 quickSort(values, maptoName, 0, values.length);
 	 
