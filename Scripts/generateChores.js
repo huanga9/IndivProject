@@ -89,18 +89,7 @@ function assignChores(){
 	 
 	 var split=greedyPartition(values, maptoName);
 	 
-    var kk="";
-    for(i = 0; i <values[1].length; i++){
-        var list = values[1][i];
-        kk += "<li>"+list+"</li>"
-    }
-    
-	var MyList = document.getElementById('roommate_1');        
-	MyList.innerHTML = kk;
-	
-	 //document.getElementById('roommate_1').innerHTML=split[1];
-//	 document.getElementById('roommate_2').innerHTML=split[3];
-	 
+	window.alert("Roommate 1's Chores for the Week: " + split[1] + \n + "Roommate 2's Chores for the week: " + split(3));
 }
 
 
