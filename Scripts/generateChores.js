@@ -97,8 +97,8 @@ function assignChores(){
 	 var split=greedyPartition(values, maptoName);
 	 
 	 //Prints onto rankChores.html page columns corresponding to each roommate and replaces commas between values with a line break
-	 document.getElementById('roommate_1').innerHTML+=split[1].split(',').join("<br/>");
-	 document.getElementById('roommate_2').innerHTML+=split[3].split(',').join("<br/>");
+	 document.getElementById('roommate_1').innerHTML+=split[1].join("\n");
+	 document.getElementById('roommate_2').innerHTML+=split[3].join("\n");
 }
 
 //Implements Quicksort algorithm on two arrays, but only the values in one array will be compared during the sort. 
