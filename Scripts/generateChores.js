@@ -14,6 +14,11 @@
  *
  */
 
+function displayChores(split) {
+	var listofChores = assignChores();
+	window.alert("Roommate 1's Chores: " + listofChores[1] + "/n" + "Roommate 2's Chores: " + listofchores[3]);
+}
+
 function assignChores(){
 	
 	var values = [];
@@ -82,14 +87,11 @@ function assignChores(){
    		maptoName.push(chore9.attr('class'));
 	 }
 	 
-	 alert ("Thank you for submitting your Rankings.");
-	document.location.href = '../View/viewChores.html'
-	 
 	 quickSort(values, maptoName, 0, values.length);
 	 
 	 var split=greedyPartition(values, maptoName);
 	 
-	window.alert("Roommate 1's Chores for the Week: " + split[1] + "\n" + "Roommate 2's Chores for the week: " + split[3]);
+	 return split;
 }
 
 
