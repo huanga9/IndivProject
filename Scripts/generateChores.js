@@ -14,6 +14,8 @@
  *
  */
 
+var split=[];
+
 function assignChores(){
 	
 	var values = [];
@@ -84,9 +86,13 @@ function assignChores(){
 	 
 	 quickSort(values, maptoName, 0, values.length);
 	 
-	 var split=greedyPartition(values, maptoName);
-	 window.alert("Roommate 1's Chores: " + split[1] + "/n" + "Roommate 2's Chores: " + split[3]);
+	 var x=greedyPartition(values, maptoName);
+	 split=x.slice(0);
 }
+
+function viewChores(){
+	window.alert("Roommate 1's Chores: " + split[1] + "/n" + "Roommate 2's Chores: " + split[3]);	
+} 
 
 function quickSort(array, array2, low, high) {
     if(high-1>low) {
