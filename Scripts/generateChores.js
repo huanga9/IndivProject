@@ -89,10 +89,9 @@ function assignChores(){
 	 
 	 var split=greedyPartition(values, maptoName);
 	 
-	 document.getElementById('roommate_1').innerHTML=(split[1]);
-	 document.getElementById('roommate_1').innerHTML=(split[3]);
+	 document.getElementById('roommate_1').innerHTML=split[1];
+	 document.getElementById('roommate_2').innerHTML=split[3];
 	 
-	 window.alert(split[1]);
 }
 
 
