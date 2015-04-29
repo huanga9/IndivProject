@@ -8,19 +8,23 @@
  * Description: a website that allows roommates to track living obligations via chore assignements and communicate through a notfications and feedback page
  *
  * Filename: generateChores.js
- * Description: This file assigns chores by reading in user input from the Chores Ranking page, sorting the input by its value
- * by calling the quickSort() function, and calling the greedyPartition() function to evenly distribute the chores.
- * Last Modified: April 22, 2015
+ * Description: This file assigns chores by reading in user input from the viewChores.html page. It stores the corresponding values 
+ * from the buttons selected in an array implementation of a stack. 
+ * Before the values are sorted and partitioned, another array is allocated to keep track of 
+ * the chores that the values correspond to. The arrays are then passed to the quickSort() algorithm which sorts the array of values. 
+ * The greedyPartition() algorithm then paritions the arrays into two sets with a minium difference between their sum of values. 
+ * The corresponding chore names contained within each set is then printed onto the rankChores() page. 
+ *
+ * Last Modified: April 28, 2015
  *
  */
-
-var split=[];
 
 function assignChores(){
 	
 	var values = [];
 	var maptoName = [];
 
+	//store values and names for each chore
 	var chore1=$("input:radio[name='rank1']:checked")
 	if (chore1.length > 0) {
 		chore1Val = parseInt(chore1.val(), 10);
@@ -84,10 +88,13 @@ function assignChores(){
    		maptoName.push(chore9.attr('class'));
 	 }
 	 
+	 //Call to the quickSort() function to sort both the arrays based on the values array
 	 quickSort(values, maptoName, 0, values.length);
 	 
+	 //Call to the greedyParition() algorithm to parition both arrays into two sets
 	 var split=greedyPartition(values, maptoName);
 	 
+	 //Prints onto rankChores.html page columns corresponding to each roommate
 	 document.getElementById('roommate_1').innerHTML+=split[1];
 	 document.getElementById('roommate_2').innerHTML+=split[3];
 }
