@@ -25,7 +25,8 @@ function assignChores(){
 	var values = [];
 	var maptoName = [];
 
-	//store values and names for each chore
+	//Store values and names for each chore
+	//If no ranking is selected for a chore, nothing is appended to the end of the array. 
 	var chore1=$("input:radio[name='rank1']:checked")
 	if (chore1.length > 0) {
 		chore1Val = parseInt(chore1.val(), 10);
@@ -95,14 +96,16 @@ function assignChores(){
 	 //Call to the greedyParition() algorithm to parition both arrays into two sets
 	 var split=greedyPartition(values, maptoName);
 	 
-	 //Prints onto rankChores.html page columns corresponding to each roommate
-	 document.getElementById('roommate_1').innerHTML+=split[1];
-	 document.getElementById('roommate_2').innerHTML+=split[3];
+	 //Prints onto rankChores.html page columns corresponding to each roommate and replaces commas between values with a line break
+	 document.getElementById('roommate_1').innerHTML+=split[1].split(',').join("<br/>");
+	 document.getElementById('roommate_2').innerHTML+=split[3].split(',').join("<br/>");
 }
 
+//Implements Quicksort algorithm on two arrays, but only the values in one array will be compared during the sort. 
 //Sorts array based on the values in 'array'. Values in array2 will be sorted in the same order following the first array. 
 function quickSort(array, array2, low, high) {
     if(high-1>low) {
+  
         var pivot=low+Math.floor(Math.random()*(high-low));;
 
         pivot=qPartition(array, array2, low, high, pivot);
@@ -138,20 +141,26 @@ Array.prototype.swap=function(a, b) {
     this[b]=tmp;
 }
 
+//Implements the a greedy partition algorithm on two arrays but only the values in one array will be compared during the sort. 
 //Paritions array based on values in sortedArray. Values in sortedArray2 will be sorted in the same order following the first array. 
 function greedyPartition(sortedArray, sortedArray2) {
 
+	//Initialize two empty arrays (two sets) to store chores for each roommate
 	var chores1 = [];
 	var chores2 = [];
+	
 	var names1=[];
 	var names2=[];
 	
+	//First value in the sorted array will be assigned to the first set
 	chores1.push(sortedArray[0]);
+	//Second value in the sorted array will be assigned to the second set
 	chores2.push(sortedArray[1]);
 	
 	names1.push(sortedArray2[0]);
 	names2.push(sortedArray2[1]);
 
+	//Compares the values in each set. The next value from the sorted array will be added to the smaller of the two sets.
 	if (chores1[0]>chores2[0]){
 		chores2.push(sortedArray[2]) 
 		names2.push(sortedArray2[2])
@@ -161,6 +170,8 @@ function greedyPartition(sortedArray, sortedArray2) {
 		names1.push(sortedArray2[2])
 	}
 	
+	//Compares the sum of the values in each set. The next value from the sorted array will be added to the set 
+	//with the smaller sum
 	for (var i = 3; i<sortedArray.length; i++) {
 		
 		var sum1 = 0; 
