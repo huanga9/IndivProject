@@ -13,7 +13,6 @@
  * Last Modified: April 22, 2015
  *
  */
- var split=[];
 
 function assignChores(){
 	
@@ -85,14 +84,9 @@ function assignChores(){
 	 
 	 quickSort(values, maptoName, 0, values.length);
 	 
-	 split=greedyPartition(values, maptoName);
+	 var split=greedyPartition(values, maptoName);
+	 window.alert("Roommate 1's Chores: " + split[1] + "/n" + "Roommate 2's Chores: " + split[3]);
 }
-
-function viewChores(){
-	window.alert("Roommate 1's Chores: " + split[1] + "/n" + "Roommate 2's Chores: " + split[3]);
-}
-
-
 
 function quickSort(array, array2, low, high) {
     if(high-1>low) {
