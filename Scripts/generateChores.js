@@ -8,8 +8,9 @@
  * Description: a website that allows roommates to track living obligations via chore assignements and communicate through a notfications and feedback page
  *
  * Filename: generateChores.js
- * Description: This file assigns chores by reading in user input from the viewChores.html page. It stores the corresponding values 
- * from the buttons selected in an array implementation of a stack. 
+ * Description: This file contains the algorithms that are used to assign chores. 
+ * The file first reads in user input from the viewChores.html page. It stores the corresponding values 
+ * from the buttons selected through an array implementation of a stack. 
  * Before the values are sorted and partitioned, another array is allocated to keep track of 
  * the chores that the values correspond to. The arrays are then passed to the quickSort() algorithm which sorts the array of values. 
  * The greedyPartition() algorithm then paritions the arrays into two sets with a minium difference between their sum of values. 
