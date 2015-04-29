@@ -16,8 +16,8 @@
 
 function assignChores(){
 	
-	alert ("Thank you for submitting your Rankings.");
-	document.location.href = '../View/viewChores.html'
+//	alert ("Thank you for submitting your Rankings.");
+//	document.location.href = '../View/viewChores.html'
 	
 	var values = [];
 	var maptoName = [];
