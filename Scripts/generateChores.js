@@ -99,6 +99,7 @@ function assignChores(){
 	 document.getElementById('roommate_2').innerHTML+=split[3];
 }
 
+//Sorts array based on the values in 'array'. Values in array2 will be sorted in the same order following the first array. 
 function quickSort(array, array2, low, high) {
     if(high-1>low) {
         var pivot=low+Math.floor(Math.random()*(high-low));;
@@ -136,6 +137,7 @@ Array.prototype.swap=function(a, b) {
     this[b]=tmp;
 }
 
+//Paritions array based on values in sortedArray. Values in sortedArray2 will be sorted in the same order following the first array. 
 function greedyPartition(sortedArray, sortedArray2) {
 
 	var chores1 = [];
@@ -149,7 +151,6 @@ function greedyPartition(sortedArray, sortedArray2) {
 	names1.push(sortedArray2[0]);
 	names2.push(sortedArray2[1]);
 
-	//Add an if statement to check if sortedArray.length>2
 	if (chores1[0]>chores2[0]){
 		chores2.push(sortedArray[2]) 
 		names2.push(sortedArray2[2])
