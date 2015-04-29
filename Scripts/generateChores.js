@@ -14,11 +14,6 @@
  *
  */
 
-function displayChores(split) {
-	var listofChores = assignChores();
-	window.alert("Roommate 1's Chores: " + listofChores[1] + "/n" + "Roommate 2's Chores: " + listofchores[3]);
-}
-
 function assignChores(){
 	
 	var values = [];
@@ -92,6 +87,8 @@ function assignChores(){
 	 var split=greedyPartition(values, maptoName);
 	 
 	 return split;
+	 
+	 window.alert("Roommate 1's Chores: " + split[1] + "/n" + "Roommate 2's Chores: " + split[3]);
 }
 
 
