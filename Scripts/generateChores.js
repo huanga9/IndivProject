@@ -89,7 +89,7 @@ function assignChores(){
 	 
 	 var split=greedyPartition(values, maptoName);
 	 
-	window.alert("Roommate 1's Chores for the Week: " + split[1] + \n + "Roommate 2's Chores for the week: " + split(3));
+	window.alert("Roommate 1's Chores for the Week: " + split[1] + "\n" + "Roommate 2's Chores for the week: " + split(3));
 }
 
 
