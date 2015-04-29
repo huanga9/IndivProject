@@ -88,7 +88,9 @@ function assignChores(){
 	 quickSort(values, maptoName, 0, values.length);
 	 
 	 var split=greedyPartition(values, maptoName);
-	 window.alert(split);
+	 
+	 var print1=document.getElementById('roommate_1')=innerHTML(split[1]);
+	 var print2=document.getElementById('roommate_2')=innerHTML(split[3]);
 }
 
 
