@@ -96,6 +96,8 @@ function assignChores(){
 	 //Call to the greedyParition() algorithm to parition both arrays into two sets
 	 var split=greedyPartition(values, maptoName);
 	 
+	 window.alert ("Thank you for submitting your rankings. View your assigned chores below.");
+	 
 	 //Prints onto rankChores.html page columns corresponding to each roommate and replaces commas between values with a line break
 	 document.getElementById('roommate_1').innerHTML+=split[1].join("<br />");
 	 document.getElementById('roommate_2').innerHTML+=split[3].join("<br />");
@@ -198,7 +200,3 @@ function greedyPartition(sortedArray, sortedArray2) {
 	return [chores1, names1, chores2, names2];
 }
 
-document.getElementById('submitRankings').addEventListener('click', function(){
-    window.alert ("Thank you for submitting your rankings. View your assigned chores below.");
-    assignChores();
-});
