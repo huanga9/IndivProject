@@ -197,3 +197,8 @@ function greedyPartition(sortedArray, sortedArray2) {
 	
 	return [chores1, names1, chores2, names2];
 }
+
+document.getElementById('submitRankings').addEventListener('click', function(){
+    window.alert ("Thank you for submitting your rankings. View your assigned chores below.");
+    assignChores();
+});
